@@ -2,7 +2,12 @@ package com.example.gpa_calculator;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 
@@ -11,8 +16,19 @@ public class StartPageController {
     @FXML
     private Button startButton;
 
+    @FXML
+    private Stage stage;
+    private Scene scene;
+
     public void start(ActionEvent event) throws IOException {
-        Main m = new Main();
-        m.changeScene("scene_2.fxml");
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("scene_2.fxml"));
+        Parent root = loader.load();
+        stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setTitle("Welcome to Woaliu's Calculator");
+        stage.setScene(scene);
+        stage.show();
     }
+
+
 }
