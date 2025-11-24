@@ -20,5 +20,6 @@
          </font>
       </Label>
       <TextField layoutX="245.0" layoutY="188.0" prefHeight="25.0" prefWidth="215.0" />
+      <Button layoutX="259.0" layoutY="306.0" mnemonicParsing="false" text="View history" />
     </children>
 </AnchorPane>
