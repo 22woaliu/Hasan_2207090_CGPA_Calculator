@@ -25,7 +25,7 @@ public class StartPageController {
         Parent root = loader.load();
         stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         scene=new Scene(root);
-        stage.setTitle("Welcome to Woaliu's Calculator");
+        stage.setTitle("Create Your CV");
         stage.setScene(scene);
         stage.show();
     }

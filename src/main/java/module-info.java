@@ -10,7 +10,10 @@ module com.example.gpa_calculator {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
+    requires com.google.gson;
+    requires org.xerial.sqlitejdbc;
 
-    opens com.example.gpa_calculator to javafx.fxml;
+    opens com.example.gpa_calculator to javafx.fxml, com.google.gson;
     exports com.example.gpa_calculator;
 }
