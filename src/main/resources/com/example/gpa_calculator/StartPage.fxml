@@ -2,24 +2,17 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpa_calculator.StartPageController">
-    <children>
-        <Label layoutX="153.0" layoutY="99.0" text="Welcome to GPA Calculator">
-            <font>
-                <Font size="24.0" />
-            </font>
-        </Label>
-        <Button fx:id="startButton" layoutX="244.0" layoutY="267.0" mnemonicParsing="false" onAction="#start" text="Start GPA Calculator" />
-      <Label layoutX="98.0" layoutY="187.0" text="Enter your name: ">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpa_calculator.StartPageController">
+   <children>
+      <Label layoutX="153.0" layoutY="99.0" text="Welcome to GPA Calculator">
          <font>
-            <Font size="18.0" />
+            <Font size="24.0" />
          </font>
       </Label>
-      <TextField layoutX="245.0" layoutY="188.0" prefHeight="25.0" prefWidth="215.0" />
-      <Button layoutX="259.0" layoutY="306.0" mnemonicParsing="false" text="View history" />
-    </children>
+      <Button fx:id="startButton" layoutX="231.0" layoutY="200.0" mnemonicParsing="false" onAction="#start" text="Start GPA Calculator" />
+      <Button layoutX="250.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleHistory" text="View History" />
+   </children>
 </AnchorPane>

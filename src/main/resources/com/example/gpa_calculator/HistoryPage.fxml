@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gpa_calculator.HistoryPageController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="20.0" layoutY="20.0" prefHeight="360.0" prefWidth="560.0" spacing="10.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+            <children>
+                <Label text="GPA History">
+                    <font>
+                        <Font size="24.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="historyTable" prefHeight="280.0" prefWidth="560.0" VBox.vgrow="ALWAYS">
+                    <columns>
+                        <TableColumn fx:id="idColumn" prefWidth="50.0" text="ID" />
+                        <TableColumn fx:id="nameColumn" prefWidth="200.0" text="Student Name" />
+                        <TableColumn fx:id="gpaColumn" prefWidth="100.0" text="GPA" />
+                        <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Date" />
+                    </columns>
+                </TableView>
+                <HBox alignment="CENTER" spacing="20.0">
+                    <children>
+                        <Button fx:id="backButton" mnemonicParsing="false" onAction="#handleBack" text="Back" />
+                        <Button fx:id="updateButton" mnemonicParsing="false" onAction="#handleUpdate" text="Update Name" />
+                        <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

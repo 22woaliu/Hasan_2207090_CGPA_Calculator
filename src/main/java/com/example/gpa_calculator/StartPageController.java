@@ -25,7 +25,18 @@ public class StartPageController {
         Parent root = loader.load();
         stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         scene=new Scene(root);
-        stage.setTitle("Welcome");
+        stage.setTitle("GPA Calculator");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void handleHistory(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("HistoryPage.fxml"));
+        Parent root = loader.load();
+        stage=(Stage)((Node)event.getSource()).getScene().getWindow();
+        scene=new Scene(root);
+        stage.setTitle("GPA History");
         stage.setScene(scene);
         stage.show();
     }
