@@ -25,7 +25,7 @@ public class StartPageController {
         Parent root = loader.load();
         stage=(Stage)((Node)event.getSource()).getScene().getWindow();
         scene=new Scene(root);
-        stage.setTitle("Create Your CV");
+        stage.setTitle("Welcome");
         stage.setScene(scene);
         stage.show();
     }
