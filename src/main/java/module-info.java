@@ -13,6 +13,7 @@ module com.example.gpa_calculator {
     requires java.sql;
     requires com.google.gson;
     requires org.xerial.sqlitejdbc;
+    requires com.fasterxml.jackson.databind;
 
     opens com.example.gpa_calculator to javafx.fxml, com.google.gson;
     exports com.example.gpa_calculator;
